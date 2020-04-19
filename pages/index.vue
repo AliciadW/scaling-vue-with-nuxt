@@ -36,7 +36,7 @@
       }
     },
     computed: mapState({
-      events: store => state.events.events
+      events: state => state.events.events
     })
   }
 </script>
