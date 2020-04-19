@@ -36,7 +36,6 @@
           message: 'Unable to fetch events at this time. Please try again later.'
         })
       }
-
     }
   }
 </script>
