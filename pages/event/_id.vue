@@ -5,9 +5,26 @@
 </template>
 
 <script>
-    export default {
-        name: "_id"
+  export default {
+    name: "_id",
+    head() {
+      return {
+        title: 'Event #' + this.id,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'What you need to know about Event #' + this.id
+          }
+        ]
+      }
+    },
+    computed: {
+      id() {
+        return this.$route.params.id
+      }
     }
+  }
 </script>
 
 <style scoped>
